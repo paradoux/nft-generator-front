@@ -1,0 +1,336 @@
+.App {
+  height: 100vh;
+  overflow: scroll;
+  text-align: center;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  padding: 2% 10%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.sub-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  border-radius: 10px;
+}
+
+.factory {
+  background-color: rgb(160, 177, 205);
+  margin-right: 20px;
+}
+
+.result {
+  background-color: #142855;
+  margin-left: 20px;
+}
+
+/* ==========================================================================
+   #FONT
+   ========================================================================== */
+@font-face {
+  font-family: "MigraBold";
+  src: url("./fonts/MigraExtrabold800.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("./fonts/Inter-Regular.ttf") format("truetype");
+}
+
+.font-robo {
+  font-family: "Roboto", "Arial", "Helvetica Neue", sans-serif;
+}
+
+.font-poppins {
+  font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
+}
+
+.white {
+  color: rgba(255, 255, 255, 0.876);
+}
+
+/* ==========================================================================
+   #GRID
+   ========================================================================== */
+/* .row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.row-space {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.col-2 {
+  width: -webkit-calc((100% - 60px) / 2);
+  width: -moz-calc((100% - 60px) / 2);
+  width: calc((100% - 60px) / 2);
+}
+
+@media (max-width: 767px) {
+  .col-2 {
+    width: 100%;
+  }
+} */
+
+/* ==========================================================================
+   #BOX-SIZING
+   ========================================================================== */
+/**
+ * More sensible default box-sizing:
+ * css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice
+ */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+/* ==========================================================================
+   #RESET
+   ========================================================================== */
+/**
+ * A very simple reset that sits on top of Normalize.css.
+ */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote,
+p,
+pre,
+dl,
+dd,
+ol,
+ul,
+figure,
+hr,
+fieldset,
+legend {
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Remove trailing margins from nested lists.
+ */
+li > ol,
+li > ul {
+  margin-bottom: 0;
+}
+
+/* ==========================================================================
+   #BUTTON
+   ========================================================================== */
+.btn {
+  display: inline-block;
+  line-height: 40px;
+  padding: 0 33px;
+  font-family: Poppins, Arial, "Helvetica Neue", sans-serif;
+  cursor: pointer;
+  color: #fff;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  font-size: 18px;
+}
+
+.btn--radius {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.btn--pill {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+
+.btn--green {
+  background: #57b846;
+}
+
+.btn--green:hover {
+  background: #4dae3c;
+}
+
+/* ==========================================================================
+   #FORM
+   ========================================================================== */
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 60px 70px 0px 60px;
+}
+
+.content {
+  height: 100%;
+  border-radius: 10%;
+  margin: auto;
+}
+
+.page-title {
+  margin: 50px 40px 0px;
+  padding: 15px;
+  font-family: "MigraBold";
+}
+
+.input {
+  outline: none;
+  border: none;
+  box-shadow: none;
+  width: 100%;
+  font-size: 14px;
+  font-family: inherit;
+  padding: 15px 0;
+  margin: 30px 5px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: transparent;
+  font-family: "Inter";
+  font-size: 18px;
+
+  &::placeholder {
+    color: #212529;
+  }
+}
+
+.cta {
+  height: 45px;
+  border: 0;
+  width: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 20px;
+  font-family: "Inter";
+  font-size: 18px;
+}
+
+.dark {
+  color: white;
+  background-color: #212529;
+
+  &:focus {
+    color: #212529;
+    background-color: white;
+  }
+}
+
+input[type="file"] {
+  outline: none;
+  border: none;
+  box-shadow: none;
+  width: 100%;
+  font-size: 14px;
+  font-family: inherit;
+  padding: 15px 0;
+  margin: 30px 5px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: transparent;
+  font-family: "Inter";
+  font-size: 18px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  transition: background-color 600000s 0s, color 600000s 0s;
+}
+
+.error {
+  margin-top: -25px;
+}
+
+.spinner {
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  border-width: 3px;
+  border-style: solid;
+  border-image: initial;
+  border-color: rgba(255, 255, 255, 0.566) rgba(255, 255, 255, 0.566)
+    transparent;
+  display: inline-block;
+  animation: 0.75s linear 0s infinite normal both running animation-spinner;
+  background: transparent !important;
+  margin: 20px auto;
+}
+@keyframes animation-spinner {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(180deg) scale(0.8);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+/* ==========================================================================
+   #RESULT
+   ========================================================================== */
+
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 60px 70px 0px 60px;
+}
+
+.link {
+  padding: 15px 0;
+  margin: 30px 5px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.bright {
+  color: #212529;
+  background-color: rgba(255, 255, 255, 0.876);
+
+  &:focus {
+    color: rgba(255, 255, 255, 0.876);
+    background-color: #212529;
+  }
+}
