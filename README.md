@@ -34,7 +34,7 @@
 
 ## About The Project
 
-<img width="800" alt="image" src="https://user-images.githubusercontent.com/27146019/164548929-29bcfedb-4da2-4b4d-aeb3-7cebb1a44351.png">
+<img width="800" alt="image" src="https://user-images.githubusercontent.com/27146019/164549145-1b4d7ac6-543d-4e99-9175-95ad9a36f0f5.png">
 
 ### Documentation
 
