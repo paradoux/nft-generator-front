@@ -38,7 +38,7 @@
 
 ### Documentation
 
-Very small DApp to to play around with NFTs using a [smart contract](https://github.com/paradoux/nft-generator). You can upload an image that will be stored in the IPFS Pinata and turned it into an NFT.
+Very small DApp to to play around with NFTs using a [smart contract](https://github.com/paradoux/nft-generator). You can upload an image that will be stored in the IPFS Pinata and turned into an NFT.
 
 ### Built With
 
