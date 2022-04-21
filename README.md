@@ -34,6 +34,8 @@
 
 ## About The Project
 
+<img width="800" alt="image" src="https://user-images.githubusercontent.com/27146019/164548929-29bcfedb-4da2-4b4d-aeb3-7cebb1a44351.png">
+
 ### Documentation
 
 Very small DApp to to play around with NFTs using a [smart contract](https://github.com/paradoux/nft-generator). You can upload an image that will be stored in the IPFS Pinata and turned it into an NFT.
