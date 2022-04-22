@@ -15,7 +15,7 @@ const Form = ({
   const onSubmit = async (data) => {
     try {
       const pinFileUrl = `https://api.pinata.cloud/pinning/pinFileToIPFS`;
-      const pinJsonUrl = `https://api.pinata.cloud/pinning/pinJSONoIPFS`;
+      const pinJsonUrl = `https://api.pinata.cloud/pinning/pinJSONToIPFS`;
       const fileArray = Array.from(data.image);
       let formData = new FormData();
       formData.append("file", fileArray[0]);
